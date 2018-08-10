@@ -1,0 +1,7 @@
+to gain access
+1. find inviteapi.min.js file
+2. breakpoint at "return p" line, the function unpacks the verify() and
+generate() functions and then calls them
+3. step until the makeInviteCode() function has been unpacked, call it
+4. the response contains a rot13'd clue with the endpoint to POST to for a code
+5. a POST to the endpoint contains a b64 encoded string that is the invite code
